@@ -59,6 +59,16 @@ export default function BirkenstockPage() {
                         <p className="mx-auto mt-4 max-w-lg text-sm md:text-base text-[#4a4a4a]">
                             Select a style below to view available models.
                         </p>
+
+                        <div className="mt-6 flex flex-col items-center gap-1 text-sm md:text-base text-[#0f0f0f]/90 animate-fadeIn">
+                            <p className="font-semibold text-yellow-600">
+                                ⚠️ We mostly do Pre-Order.
+                            </p>
+                            <p>Birkenstock always low on stock.</p>
+                            <p className="mt-2 text-xs uppercase tracking-widest opacity-80 text-[#6a6a6a]">
+                                For shoes & clothing refer to store & Instagram
+                            </p>
+                        </div>
                     </div>
                 </section>
 

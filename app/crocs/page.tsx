@@ -23,8 +23,8 @@ const MarbledImg = { src: "/crocs_batch_2/marble_blue.png" };
 
 const CATEGORIES: { id: Category; label: string; img: string }[] = [
   { id: "Classic", label: "Classic Clog", img: ClassicImg.src },
-  { id: "Crush", label: "Crush Clog", img: CrushImg.src },
-  { id: "Platform", label: "Platform Clog", img: PlatformImg.src },
+  { id: "Crush", label: "Crush Clog", img: PlatformImg.src },
+  { id: "Platform", label: "Platform Clog", img: CrushImg.src },
   { id: "CrocBand", label: "Crocband", img: CrocBandImg.src },
   { id: "Baya", label: "Baya Clog", img: BayaImg.src },
   { id: "Marbled", label: "Marbled", img: MarbledImg.src },

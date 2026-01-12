@@ -89,6 +89,19 @@ export default function Home() {
               </p>
 
               {/* CTA buttons only on first slide */}
+              {i === 2 && (
+                <div className="mt-6 flex flex-col items-center md:items-start gap-1 text-sm md:text-base text-white/90 animate-fadeIn">
+                  <p className="font-semibold text-[#facc15]">
+                    ⚠️ We mostly do Pre-Order.
+                  </p>
+                  <p>Birkenstock always low on stock.</p>
+                  <p className="mt-2 text-xs uppercase tracking-widest opacity-80">
+                    For shoes & clothing refer to store & Instagram
+                  </p>
+                </div>
+              )}
+
+              {/* CTA buttons only on first slide */}
               {i === 0 && (
                 <div className="mt-8 flex flex-col items-center md:items-start animate-fadeIn">
                   <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
@@ -96,7 +109,15 @@ export default function Home() {
                       href="/crocs"
                       className="group flex items-center justify-center gap-2 bg-white px-8 py-3 text-sm font-bold uppercase tracking-widest text-[#0f0f0f] shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-[#f0f0f0] active:scale-95 w-full md:w-auto"
                     >
-                      Shop Online
+                      Shop Crocs
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </a>
+
+                    <a
+                      href="/birkenstock"
+                      className="group flex items-center justify-center gap-2 bg-white px-8 py-3 text-sm font-bold uppercase tracking-widest text-[#0f0f0f] shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-[#f0f0f0] active:scale-95 w-full md:w-auto"
+                    >
+                      Shop Birkenstocks
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </a>
 
