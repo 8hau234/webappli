@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global theme */
+:root {
+  --bg: #fafaf8;      /* warm white */
+  --text: #0f0f0f;    /* soft black */
+  --muted: #4a4a4a;
+  --border: #e5e5e0;
+}
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    ui-sans-serif, sans-serif;
+}

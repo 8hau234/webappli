@@ -1,0 +1,797 @@
+import { IMG_ARIZONA_LEATHER_BLACK_PNG, IMG_ARIZONA_LEATHER_BLUE_PNG, IMG_ARIZONA_LEATHER_BROWN_PNG, IMG_ARIZONA_LEATHER_IRON_PNG, IMG_ARIZONA_LEATHER_OLIVE_PNG, IMG_ARIZONA_LEATHER_WHITE_PNG, IMG_ARIZONA_OILED_BLACK_PNG, IMG_ARIZONA_OILED_BLUE_PNG, IMG_ARIZONA_OILED_HABANA_PNG, IMG_ARIZONA_OILED_TOBACCO_PNG, IMG_ARIZONA_SUEDE_BEIGE_PNG, IMG_ARIZONA_SUEDE_BLACK_PNG, IMG_ARIZONA_SUEDE_MINK_PNG, IMG_ARIZONA_SUEDE_MOCHA_PNG, IMG_ARIZONA_SUEDE_TAUPE_PNG, IMG_BIRKEN1_JPG, IMG_BIRKEN_EVA_BLACK_PNG, IMG_BIRKEN_EVA_LIME_PNG, IMG_BIRKEN_EVA_NAVY_PNG, IMG_BIRKEN_EVA_OLIVE_PNG, IMG_BIRKEN_EVA_ORANGE_PNG, IMG_BIRKEN_EVA_SILVER_PNG, IMG_BIRKEN_EVA_WHITE_PNG, IMG_BIRKEN_FLORA_BROWN_PNG, IMG_BIRKEN_FLORA_NAVY_PNG, IMG_BIRKEN_FLORA_WHITE_PNG, IMG_BIRKENS1_JPG, IMG_BIRKENS2_JPG, IMG_BIRKENS3_JPG, IMG_BIRKENS4_JPG, IMG_BIRKENS5_PNG, IMG_BIRKENS6_PNG, IMG_BIRKENS7_PNG, IMG_BOSTON_NATURAL_BLACK_PNG, IMG_BOSTON_NATURAL_BROWN_PNG, IMG_BOSTON_NATURAL_OLIVE_PNG, IMG_BOSTON_OILED_BLACK_PNG, IMG_BOSTON_OILED_HABANA_PNG, IMG_BOSTON_OILED_IRON_PNG, IMG_BOSTON_OILED_KHAKI_PNG, IMG_BOSTON_OILED_TOBACCO_PNG, IMG_BOSTON_SUEDE_BLACK_PNG, IMG_BOSTON_SUEDE_BLUE_PNG, IMG_BOSTON_SUEDE_ESPRESSO_PNG, IMG_BOSTON_SUEDE_KHAKI_PNG, IMG_BOSTON_SUEDE_LATTE_PNG, IMG_BOSTON_SUEDE_MINK_PNG, IMG_BOSTON_SUEDE_MOCHA_PNG, IMG_BOSTON_SUEDE_STONE_PNG, IMG_BOSTON_SUEDE_TAUPE_PNG, IMG_BOSTON_SUEDE_THYME_PNG, IMG_GIZEH_BIRKO_BLACK_PNG, IMG_GIZEH_BIRKO_NAVY_PNG, IMG_GIZEH_BIRKO_WHITE_PNG, IMG_GIZEH_EVA_BLACK_PNG, IMG_GIZEH_EVA_CANTALOUPE_PNG, IMG_GIZEH_EVA_LIGHT_PINK_PNG, IMG_GIZEH_EVA_LIME_PNG, IMG_GIZEH_EVA_OLIVE_PNG, IMG_GIZEH_EVA_PINK_PNG, IMG_GIZEH_EVA_WHITE_PNG, IMG_GIZEH_OILED_BLACK_PNG, IMG_GIZEH_OILED_BLUE_PNG, IMG_GIZEH_OILED_HABANA_PNG, IMG_GIZEH_OILED_IRON_PNG, IMG_GIZEH_OILED_TOBACCO_PNG, IMG_HERO1_JPG, IMG_HERO2_JPG, IMG_HERO3_JPG, IMG_MAYARI_BIRKO_BEIGE_PNG, IMG_MAYARI_BIRKO_BLACK_PNG, IMG_MAYARI_BIRKO_MOCHA_PNG, IMG_MAYARI_BIRKO_STONE_PNG, IMG_MAYARI_BIRKO_WHITE_PNG, IMG_MAYARI_OILED_BLACK_PNG, IMG_MAYARI_OILED_HABANA_PNG, IMG_MAYARI_OILED_TOBACCO_PNG, IMG_SIZE_ADULT_JPG, IMG_SIZE_KIDS_JPG, IMG_SUPER_BIRKI_BLACK_PNG, IMG_TOKIO_SUEDE_LATTE_PNG, IMG_TOKIO_SUEDE_MOCHA_PNG, IMG_TOKIO_SUEDE_STONE_PNG, IMG_TOKIO_SUEDE_THYME_PNG } from "./birkenstock_images";
+
+export interface ProductItem {
+    name: string;
+    color: string;
+    type?: string; 
+    fit?: string; 
+    condition: string;
+    img: string;
+    price: number;
+    category: string;
+    description: string;
+}
+
+export const BIRKEN_ITEMS: ProductItem[] = [
+    {
+        name: "Arizona EVA",
+        color: "Orange",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_BIRKEN_EVA_ORANGE_PNG,
+        price: 10500,
+        category: "Arizona",
+        description:
+            "Vibrant Orange Arizona EVA. Lightweight, water-friendly, and perfect for summer.",
+    },
+    {
+        name: "Arizona EVA",
+        color: "White",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_BIRKEN_EVA_WHITE_PNG,
+        price: 10500,
+        category: "Arizona",
+        description:
+            "Crisp White Arizona EVA. The ultimate clean look for any casual day.",
+    },
+    {
+        name: "Arizona EVA",
+        color: "Silver",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_BIRKEN_EVA_SILVER_PNG,
+        price: 10500,
+        category: "Arizona",
+        description:
+            "Sleek Silver Arizona EVA. Modern metallic style meets iconic comfort.",
+    },
+    {
+        name: "Arizona EVA",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_BIRKEN_EVA_BLACK_PNG,
+        price: 10500,
+        category: "Arizona",
+        description:
+            "Classic Black Arizona EVA. Versatile, durable, and ready for anything.",
+    },
+    {
+        name: "Arizona EVA",
+        color: "Olive",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_BIRKEN_EVA_OLIVE_PNG,
+        price: 10500,
+        category: "Arizona",
+        description:
+            "Earthy Olive Arizona EVA. Stylish and functional for the outdoors.",
+    },
+    {
+        name: "Arizona EVA",
+        color: "Navy",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_BIRKEN_EVA_NAVY_PNG,
+        price: 10500,
+        category: "Arizona",
+        description:
+            "Deep Navy Arizona EVA. A classic color for a classic silhouette.",
+    },
+    {
+        name: "Arizona EVA",
+        color: "Faded Lime",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_BIRKEN_EVA_LIME_PNG,
+        price: 10500,
+        category: "Arizona",
+        description:
+            "Fresh Faded Lime Arizona EVA. A soft pop of color for your rotation.",
+    },
+    {
+        name: "Arizona Birko-Flor",
+        color: "Dark Brown",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BIRKEN_FLORA_BROWN_PNG,
+        price: 16000,
+        category: "Arizona",
+        description:
+            "Classic Dark Brown Birko-Flor. Durable, skin-friendly, and timeless.",
+    },
+    {
+        name: "Arizona Birko-Flor",
+        color: "Navy",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BIRKEN_FLORA_NAVY_PNG,
+        price: 16000,
+        category: "Arizona",
+        description:
+            "Sophisticated Navy Birko-Flor. A versatile shade for every occasion.",
+    },
+    {
+        name: "Arizona Birko-Flor",
+        color: "White",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BIRKEN_FLORA_WHITE_PNG,
+        price: 16000,
+        category: "Arizona",
+        description:
+            "Clean White Birko-Flor. The essential summer sandal.",
+    },
+    {
+        name: "Arizona Suede Soft Footbed",
+        color: "Taupe",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_SUEDE_TAUPE_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Iconic Taupe Suede with Soft Footbed. Unmatched comfort and style.",
+    },
+    {
+        name: "Arizona Suede Soft Footbed",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_SUEDE_BLACK_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Classic Black Suede with Soft Footbed. The ultimate luxury staple.",
+    },
+    {
+        name: "Arizona Suede Soft Footbed",
+        color: "Mocha",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_SUEDE_MOCHA_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Rich Mocha Suede with Soft Footbed. Warm, earthy, and comfortable.",
+    },
+    {
+        name: "Arizona Suede Soft Footbed",
+        color: "Mink",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_SUEDE_MINK_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Soft Mink Suede with Soft Footbed. A distinct yet neutral choice.",
+    },
+    {
+        name: "Arizona Suede Soft Footbed",
+        color: "Beige",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_SUEDE_BEIGE_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Light Beige Suede with Soft Footbed. Fresh, airy, and premium.",
+    },
+    {
+        name: "Arizona Natural Leather",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_LEATHER_BLACK_PNG,
+        price: 25000,
+        category: "Arizona",
+        description:
+            "Premium Black Natural Leather. Sharp, durable, and sophisticated.",
+    },
+    {
+        name: "Arizona Natural Leather",
+        color: "Blue",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_LEATHER_BLUE_PNG,
+        price: 25000,
+        category: "Arizona",
+        description:
+            "Deep Blue Natural Leather. A unique twist on a classic style.",
+    },
+    {
+        name: "Arizona Natural Leather",
+        color: "White",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_LEATHER_WHITE_PNG,
+        price: 25000,
+        category: "Arizona",
+        description:
+            "Crisp White Natural Leather. Clean lines and superior quality.",
+    },
+    {
+        name: "Arizona Natural Leather",
+        color: "Dark Brown",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_LEATHER_BROWN_PNG,
+        price: 25000,
+        category: "Arizona",
+        description:
+            "Rich Dark Brown Natural Leather. The epitome of heritage style.",
+    },
+    {
+        name: "Arizona Natural Leather",
+        color: "Iron",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_LEATHER_IRON_PNG,
+        price: 25000,
+        category: "Arizona",
+        description:
+            "Steely Iron Natural Leather. Modern, industrial, and chic.",
+    },
+    {
+        name: "Arizona Natural Leather",
+        color: "Olive",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_LEATHER_OLIVE_PNG,
+        price: 25000,
+        category: "Arizona",
+        description:
+            "Earthy Olive Natural Leather. A rugged yet refined classic.",
+    },
+    {
+        name: "Arizona Oiled Leather",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_OILED_BLACK_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Bold Black Oiled Leather. Developed for a rugged, vintage look.",
+    },
+    {
+        name: "Arizona Oiled Leather",
+        color: "Tobacco Brown",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_OILED_TOBACCO_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Classic Tobacco Brown Oiled Leather. Rich texture that improves with age.",
+    },
+    {
+        name: "Arizona Oiled Leather",
+        color: "Blue",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_OILED_BLUE_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Deep Blue Oiled Leather. A sophisticated alternative to black.",
+    },
+    {
+        name: "Arizona Oiled Leather",
+        color: "Habana",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_ARIZONA_OILED_HABANA_PNG,
+        price: 27500,
+        category: "Arizona",
+        description:
+            "Timeless Habana Oiled Leather. The definitive heritage sandal.",
+    },
+    {
+        name: "Boston Oiled Leather Soft Footbed",
+        color: "Habana",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_OILED_HABANA_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Iconic Boston clog in Habana Oiled Leather with Soft Footbed.",
+    },
+    {
+        name: "Boston Oiled Leather Soft Footbed",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_OILED_BLACK_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Sleek Black Oiled Leather Boston with Soft Footbed. A wardrobe staple.",
+    },
+    {
+        name: "Boston Oiled Leather Soft Footbed",
+        color: "Tobacco Brown",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_OILED_TOBACCO_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Rugged Tobacco Brown Oiled Leather Boston with Soft Footbed.",
+    },
+    {
+        name: "Boston Oiled Leather Soft Footbed",
+        color: "Iron",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_OILED_IRON_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Industrial Iron Oiled Leather Boston with Soft Footbed.",
+    },
+    {
+        name: "Boston Oiled Leather Soft Footbed",
+        color: "Faded Khaki",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_OILED_KHAKI_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Earthy Faded Khaki Oiled Leather Boston with Soft Footbed.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Thyme",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_THYME_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Natural Thyme Suede Boston with Soft Footbed. A serene, organic choice.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Blue",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_BLUE_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Vibrant Blue Suede Boston with Soft Footbed. Bold and comfortable.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Faded Khaki",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_KHAKI_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Relaxed Faded Khaki Suede Boston with Soft Footbed.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Taupe",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_TAUPE_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "The Classic Taupe Suede Boston with Soft Footbed. A true icon.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Mink",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_MINK_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Rich Mink Suede Boston with Soft Footbed. Luxuriously soft.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Mocha",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_MOCHA_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Dark Mocha Suede Boston with Soft Footbed. A warm, earthy classic.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_BLACK_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Midnight Black Suede Boston with Soft Footbed. Sleek and versatile.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Latte Cream",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_LATTE_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Soft Latte Cream Suede Boston with Soft Footbed. Light and airy.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Espresso",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_ESPRESSO_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Deep Espresso Suede Boston with Soft Footbed. Rich and robust.",
+    },
+    {
+        name: "Boston Suede Soft Footbed",
+        color: "Stone Coin",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_SUEDE_STONE_PNG,
+        price: 27500,
+        category: "Boston",
+        description:
+            "Cool Stone Coin Suede Boston with Soft Footbed. Modern neutrality.",
+    },
+    {
+        name: "Boston Natural Leather",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_NATURAL_BLACK_PNG,
+        price: 25000,
+        category: "Boston",
+        description:
+            "Premium Black Natural Leather Boston. A sophisticated classic.",
+    },
+    {
+        name: "Boston Natural Leather",
+        color: "Dark Brown",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_NATURAL_BROWN_PNG,
+        price: 25000,
+        category: "Boston",
+        description:
+            "Rich Dark Brown Natural Leather Boston. Heritage style defined.",
+    },
+    {
+        name: "Boston Natural Leather",
+        color: "Olive",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_BOSTON_NATURAL_OLIVE_PNG,
+        price: 25000,
+        category: "Boston",
+        description:
+            "Earthy Olive Natural Leather Boston. Rugged and refined.",
+    },
+    {
+        name: "Gizeh EVA",
+        color: "Olive",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_GIZEH_EVA_OLIVE_PNG,
+        price: 10500,
+        category: "Gizeh",
+        description:
+            "Waterproof Olive Gizeh EVA. Perfect for beach or garden.",
+    },
+    {
+        name: "Gizeh EVA",
+        color: "Beetroot Purple",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_GIZEH_EVA_PINK_PNG,
+        price: 10500,
+        category: "Gizeh",
+        description:
+            "Vibrant Beetroot Purple Gizeh EVA. A splash of fun for summer.",
+    },
+    {
+        name: "Gizeh EVA",
+        color: "Shell Pink",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_GIZEH_EVA_LIGHT_PINK_PNG,
+        price: 10500,
+        category: "Gizeh",
+        description:
+            "Soft Shell Pink Gizeh EVA. Delicate and durable.",
+    },
+    {
+        name: "Gizeh EVA",
+        color: "Faded Lime",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_GIZEH_EVA_LIME_PNG,
+        price: 10500,
+        category: "Gizeh",
+        description:
+            "Fresh Faded Lime Gizeh EVA. Zesty style with comfort.",
+    },
+    {
+        name: "Gizeh EVA",
+        color: "White",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_GIZEH_EVA_WHITE_PNG,
+        price: 10500,
+        category: "Gizeh",
+        description:
+            "Crisp White Gizeh EVA. Clean, bright, and essential.",
+    },
+    {
+        name: "Gizeh EVA",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_GIZEH_EVA_BLACK_PNG,
+        price: 10500,
+        category: "Gizeh",
+        description:
+            "Classic Black Gizeh EVA. The go-to sandal for everything.",
+    },
+    {
+        name: "Gizeh EVA",
+        color: "Cantaloupe",
+        fit: "Regular fit",
+        condition: "New / Tag",
+        img: IMG_GIZEH_EVA_CANTALOUPE_PNG,
+        price: 10500,
+        category: "Gizeh",
+        description:
+            "Soft Cantaloupe Gizeh EVA. A sweet, summery pastel.",
+    },
+    {
+        name: "Gizeh Birko-Flor",
+        color: "Navy",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_GIZEH_BIRKO_NAVY_PNG,
+        price: 16000,
+        category: "Gizeh",
+        description:
+            "Classic Navy Birko-Flor Gizeh. Timeless and durable.",
+    },
+    {
+        name: "Gizeh Birko-Flor",
+        color: "White",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_GIZEH_BIRKO_WHITE_PNG,
+        price: 16000,
+        category: "Gizeh",
+        description:
+            "Clean White Birko-Flor Gizeh. Fresh and versatile.",
+    },
+    {
+        name: "Gizeh Birko-Flor",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_GIZEH_BIRKO_BLACK_PNG,
+        price: 16000,
+        category: "Gizeh",
+        description:
+            "Sleek Black Birko-Flor Gizeh. The ultimate everyday sandal.",
+    },
+    {
+        name: "Gizeh Oiled Leather",
+        color: "Habana",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_GIZEH_OILED_HABANA_PNG,
+        price: 23000,
+        category: "Gizeh",
+        description:
+            "Rich Habana Oiled Leather Gizeh. A rustic, heritage look.",
+    },
+    {
+        name: "Gizeh Oiled Leather",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_GIZEH_OILED_BLACK_PNG,
+        price: 23000,
+        category: "Gizeh",
+        description:
+            "Bold Black Oiled Leather Gizeh. Developed for a rugged aesthetic.",
+    },
+    {
+        name: "Gizeh Oiled Leather",
+        color: "Iron",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_GIZEH_OILED_IRON_PNG,
+        price: 23000,
+        category: "Gizeh",
+        description:
+            "Industrial Iron Oiled Leather Gizeh. Modern and sophisticated.",
+    },
+    {
+        name: "Gizeh Oiled Leather",
+        color: "Blue",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_GIZEH_OILED_BLUE_PNG,
+        price: 23000,
+        category: "Gizeh",
+        description:
+            "Deep Blue Oiled Leather Gizeh. Unique character and charm.",
+    },
+    {
+        name: "Gizeh Oiled Leather",
+        color: "Tobacco Brown",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_GIZEH_OILED_TOBACCO_PNG,
+        price: 23000,
+        category: "Gizeh",
+        description:
+            "Classic Tobacco Brown Oiled Leather Gizeh. Ages beautifully.",
+    },
+    {
+        name: "Mayari Oiled Leather",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_MAYARI_OILED_BLACK_PNG,
+        price: 23000,
+        category: "Mayari",
+        description:
+            "Elegant Black Oiled Leather Mayari. Crisscrossing strap perfection.",
+    },
+    {
+        name: "Mayari Oiled Leather",
+        color: "Tobacco Brown",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_MAYARI_OILED_TOBACCO_PNG,
+        price: 23000,
+        category: "Mayari",
+        description:
+            "Chic Tobacco Brown Oiled Leather Mayari. A graceful silhouette.",
+    },
+    {
+        name: "Mayari Oiled Leather",
+        color: "Habana",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_MAYARI_OILED_HABANA_PNG,
+        price: 23000,
+        category: "Mayari",
+        description:
+            "Timeless Habana Oiled Leather Mayari. Comfort meets style.",
+    },
+    {
+        name: "Mayari Birko-Flor",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_MAYARI_BIRKO_BLACK_PNG,
+        price: 20000,
+        category: "Mayari",
+        description:
+            "Classic Black Birko-Flor Mayari. Durable and skin-friendly.",
+    },
+    {
+        name: "Mayari Birko-Flor",
+        color: "Mocha",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_MAYARI_BIRKO_MOCHA_PNG,
+        price: 20000,
+        category: "Mayari",
+        description:
+            "Rich Mocha Birko-Flor Mayari. Warm tones, cool comfort.",
+    },
+    {
+        name: "Mayari Birko-Flor",
+        color: "Stone",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_MAYARI_BIRKO_STONE_PNG,
+        price: 20000,
+        category: "Mayari",
+        description:
+            "Versatile Stone Birko-Flor Mayari. Neutral and effortless.",
+    },
+    {
+        name: "Mayari Birko-Flor",
+        color: "White",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_MAYARI_BIRKO_WHITE_PNG,
+        price: 20000,
+        category: "Mayari",
+        description:
+            "Crisp White Birko-Flor Mayari. Fresh, clean, and stylish.",
+    },
+    {
+        name: "Mayari Birko-Flor",
+        color: "Beige",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_MAYARI_BIRKO_BEIGE_PNG,
+        price: 20000,
+        category: "Mayari",
+        description:
+            "Soft Beige Birko-Flor Mayari. A light, airy addition to your look.",
+    },
+    {
+        name: "Tokio Suede",
+        color: "Stone Coin",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_TOKIO_SUEDE_STONE_PNG,
+        price: 27500,
+        category: "Tokio",
+        description:
+            "Modern Stone Coin Suede Tokio. A sophisticated clog with backstrap.",
+    },
+    {
+        name: "Tokio Suede",
+        color: "Latte Cream",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_TOKIO_SUEDE_LATTE_PNG,
+        price: 27500,
+        category: "Tokio",
+        description:
+            "Soft Latte Cream Suede Tokio. Comfort and stability combined.",
+    },
+    {
+        name: "Tokio Suede",
+        color: "Mocha",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_TOKIO_SUEDE_MOCHA_PNG,
+        price: 27500,
+        category: "Tokio",
+        description:
+            "Rich Mocha Suede Tokio. Deep, earthy tones for professional or casual wear.",
+    },
+    {
+        name: "Tokio Suede",
+        color: "Thyme",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_TOKIO_SUEDE_THYME_PNG,
+        price: 27500,
+        category: "Tokio",
+        description:
+            "Natural Thyme Suede Tokio. Unique green hue with secure fit.",
+    },
+    {
+        name: "Super Birki",
+        color: "Black",
+        fit: "Regular fit",
+        condition: "New / Boxed",
+        img: IMG_SUPER_BIRKI_BLACK_PNG,
+        price: 12000,
+        category: "Super Birki",
+        description:
+            "Durable Black Super Birki. Water-resistant and perfect for work or garden.",
+    },
+];
