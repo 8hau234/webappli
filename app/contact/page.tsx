@@ -153,6 +153,33 @@ export default function ContactPage() {
           </div>
         </section>
 
+        {/* VISIT SHOWROOM */}
+        <section className="rounded-2xl border border-[#e5e5e0] bg-white p-6 space-y-3">
+          <h2 className="text-lg font-light text-[#0f0f0f]">
+            Visit Our Showroom
+          </h2>
+
+          <p className="text-sm text-[#4a4a4a]">
+            Experience our collection in person. Try on your favorite pairs.
+          </p>
+
+          <div className="space-y-1 text-sm text-[#4a4a4a]">
+            <p>
+              <span className="font-medium text-[#0f0f0f]">Address:</span>{" "}
+              Lazimpat, Kathmandu
+            </p>
+          </div>
+
+          <a
+            href="https://www.google.com/maps/search/Store+Oversized+Lazimpat+Kathmandu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex mt-3 border border-[#0f0f0f] px-6 py-2 text-xs uppercase tracking-[0.18em] text-[#0f0f0f] hover:bg-[#0f0f0f]/5 transition"
+          >
+            Available on Google Maps
+          </a>
+        </section>
+
         {/* SMALL NOTE */}
         <section>
           <p className="text-xs text-[#6a6a6a]">

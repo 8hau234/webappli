@@ -121,11 +121,12 @@ export default function Home() {
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </a>
 
-                    <button
+                    <a
+                      href="/contact"
                       className="group flex items-center justify-center gap-2 border border-white/80 px-8 py-3 text-sm font-medium uppercase tracking-widest text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white w-full md:w-auto"
                     >
                       📍 Visit Store
-                    </button>
+                    </a>
                   </div>
 
                   {/* TRUST BADGES / TRUST BAR */}
